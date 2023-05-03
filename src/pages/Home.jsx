@@ -25,7 +25,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col w-screen h-screen">
       <Header />
       <div className="flex flex-1">
         <Asidebar nav={nav} />
@@ -39,10 +39,10 @@ function Home() {
             <h1 className="font-bold text-xl">Melhores avaliados</h1>
             <div className="mt-4">
               <Swiper
-                slidesPerView={7}
-                spaceBetween={30}
-                centeredSlides
-                className="max-sm:w-[1200px] md:w-[1300px] lg:w-[1300px] xl:w-[1500px]"
+                slidesPerView={2}
+                spaceBetween={14}
+                width={350}
+                grabCursor
               >
                 {movies.map((i, k) => (
                   <SwiperSlide className="transition-all rounded overflow-hidden hover:scale-110">
